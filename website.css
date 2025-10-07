@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  position: relative;
+  margin: 0;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+     font-size: 2rem;
+    color: rgb(61, 61, 240);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+
+h1{
+    margin: 10px;
+    box-shadow: 20px;
+    background: rgba(255, 255, 255, 0.05); /* โปร่งใส */
+      border-radius: 15px; /* มุมโค้ง */
+      backdrop-filter: blur(10px); /* เบลอพื้นหลัง */
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* เส้นขอบบาง */
+      font-family: "Poppins", sans-serif;
+      font-size: 50px;
+      background: linear-gradient(to right,#04356d,#3dabd6,#6dacc5,#2bb1da,#0e66a1);
+      background-size: 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+nav{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: dodgerblue;
+    border-bottom: 3px solid dodgerblue;
+}
+
+div{
+    margin: 30px;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: azure;
+}
+
+.title {
+  margin-top: 65px;   /* เว้นระยะด้านบน */
+  margin-bottom: 20px; /* เว้นระยะด้านล่าง */
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 255, 255, 0.05); /* โปร่งใส */
+      border-radius: 15px; /* มุมโค้ง */
+      backdrop-filter: blur(10px); /* เบลอพื้นหลัง */
+      -webkit-backdrop-filter: blur(10px); /* Safari */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* เส้นขอบบาง */
+      background: linear-gradient(to right,#04356d,#ee481e,#922ee4,#a2a5a7,#0b4cc5);
+      background-size: 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: ability-gradient 2.5s linear infinite;
+}
+
+@keyframes ability-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.content p {
+  margin-bottom: 15px;  /* เว้นระยะระหว่างย่อหน้า */
+  line-height: 1.6;     /* เพิ่มความสูงบรรทัดให้อ่านง่ายขึ้น */
+}
+
+.left-img {
+  float: left;
+  margin: 10px 15px 10px 0;
+  width: 200px;
+}
+
+.right-img {
+  float: right;
+  margin: 10px 0 10px 15px;
+  width: 200px;
+}
+
+img {
+  border: 2px solid #ccc;   /* สีเทาอ่อน */
+  padding: 3px;             /* เว้นระยะขอบใน */
+  background-color: rgb(0, 0, 0);  /* ใส่พื้นหลังขาวในกรอบ */
+  border-radius: 5px;       /* มุมโค้ง (เอาออกถ้าอยากได้มุมเหลี่ยม) */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("240304150609-746.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* ทำให้เบลอ */
+  transform: scale(1.1); /* ป้องกันขอบเบลอไม่เต็มจอ */
+  z-index: -1; /* ส่งไปอยู่ข้างหลัง */
+}
+
+.story-contack {
+  background: rgba(0, 0, 0, 0.4); /* ดำโปร่งใส */
+  border-radius: 15px;            /* มุมโค้ง */
+  padding: 20px;                  /* เว้นขอบใน */
+  margin: 20px 0;                 /* เว้นขอบนอก */
+  backdrop-filter: blur(6px);     /* เบลอพื้นหลัง */
+  -webkit-backdrop-filter: blur(6px); /* สำหรับ Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* เส้นขอบบาง */
+  color: white;                   /* สีตัวอักษร */
+  line-height: 1.6;       /* ทำให้ตัวอักษรอ่านง่าย */
+}
+
+.Ability-contack {
+  background: rgba(0, 0, 0, 0.4); /* ดำโปร่งใส */
+  border-radius: 15px;            /* มุมโค้ง */
+  padding: 20px;                  /* เว้นขอบใน */
+  margin: 20px 0;                 /* เว้นขอบนอก */
+  backdrop-filter: blur(6px);     /* เบลอพื้นหลัง */
+  -webkit-backdrop-filter: blur(6px); /* สำหรับ Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* เส้นขอบบาง */
+  color: white;                   /* สีตัวอักษร */
+  line-height: 1.6;               /* ทำให้ตัวอักษรอ่านง่าย */
+}
+
+.home-contack{
+    background: rgba(0, 0, 0, 0.4); /* ดำโปร่งใส */
+  border-radius: 15px;            /* มุมโค้ง */
+  padding: 20px;                  /* เว้นขอบใน */
+  margin: 20px 0;                 /* เว้นขอบนอก */
+  backdrop-filter: blur(6px);     /* เบลอพื้นหลัง */
+  -webkit-backdrop-filter: blur(6px); /* สำหรับ Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* เส้นขอบบาง */
+  color: white;                   /* สีตัวอักษร */
+  line-height: 1.6;               /* ทำให้ตัวอักษรอ่านง่าย */
+}
